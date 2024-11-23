@@ -1,641 +1,316 @@
 ---
 # You can also start simply with 'default'
-theme: seriph
+theme: none
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+# background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+title: 意外に簡単！ドキュメント翻訳で始める OSS コントリビュート
+# info: |
+#   ## Slidev Starter Template
+#   Presentation slides for developers.
 
-  Learn more at [Sli.dev](https://sli.dev)
+#   Learn more at [Sli.dev](https://sli.dev)
 # apply unocss classes to the current slide
-class: text-center
+# class: text-center
 # https://sli.dev/features/drawing
-drawings:
-  persist: false
+# drawings:
+#   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: view-transition
 # enable MDC Syntax: https://sli.dev/features/mdc
-mdc: true
+# mdc: true
 # take snapshot for each slide in the overview
-overviewSnapshots: true
+# overviewSnapshots: true
+fonts:
+  serif: BIZ UDPMincho
+  mono: Roboto Mono
 ---
 
-# Welcome to Slidev
+# 意外に簡単！<br/>ドキュメント翻訳で始める OSS コントリビュート
 
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+2024.10.22 @ UV Study: Vue.js LT 会
 
 ---
-transition: fade-out
+layout: quote
 ---
 
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
+# 初 LT！🥳
 
 ---
-transition: slide-up
-level: 2
+layout: two-cols-header
 ---
 
-# Navigation
+# 自己紹介
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+<div class="h-12" />
 
-## Keyboard Shortcuts
+::left::
+<p class="pb-8">
+  <span class="text-7xl font-mono font-light">jay-es</span>
+  （じぇいえす）
+</p>
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: two-cols
-layoutClass: gap-16
----
-
-# Table of contents
-
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+- フロントエンドエンジニア
+- Vue.js & Vite 日本語ドキュメントメンテナー
+- Vue.js 日本ユーザーグループスタッフ
 
 ::right::
-
-<Toc v-click minDepth="1" maxDepth="2"></Toc>
+<img src="/js-logo.svg" class="rounded-full size-56" />
 
 ---
-layout: image-right
-image: https://cover.sli.dev
+layout: quote
 ---
 
-# Code
+# 誕生日！🥳
 
-Use code snippets and get the highlighting directly, and even types hover!
+---
 
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
+# コントリビュート略歴
 
-import { computed, ref } from 'vue'
+<v-clicks>
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
+- 2018/11 Vuex ドキュメントの誤訳を修正（初めての OSS）
+- Vue 3, Nuxt 2, Svelte のドキュメント翻訳
+- ライブラリーなどにも PR を送るように
+- 2021/03 Vite 日本語ドキュメント → 2021/06 メンテナーに
+- Solid ドキュメント全翻訳	
+- 2022/01 Vue サイトリニューアル。 メンテナー + プロジェクトリード
+- Vue 3 移行ガイド翻訳、React ドキュメントのタイポ修正など
 
-doubled.value = 2
-```
+</v-clicks>
 
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
 <style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+li:nth-child(1), li:nth-child(4), li:nth-child(6) {
+  color: var(--slidev-theme-strong);
+  font-weight: bold;
 }
 </style>
 
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
 ---
-level: 2
+layout: section
 ---
 
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
+# ドキュメント翻訳は難しい？
 
 ---
 
-# Components
+# よくある誤解 1
 
-<div grid="~ cols-2 gap-4">
-<div>
+英語がペラペラじゃないといけないのでは...😥
 
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
+<div v-click class="misunderstanding">
+  <strong>私も英語は話せません...😵</strong>
+  中学〜高校程度の英文法が分かれば大丈夫！
 </div>
 
 ---
 
-# Motions
+# よくある誤解 2
 
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
+技術に精通していないといけないのでは...😰
 
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
 
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
+<div v-click class="misunderstanding">
+  <strong>正直､全部は理解できてない！😵‍💫</strong>
+  推測で翻訳している箇所もある...
 </div>
 
 ---
+layout: section
+---
 
-# LaTeX
-
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
+# ドキュメント翻訳のメリット
 
 ---
 
-# Diagrams
+# ドキュメント翻訳のメリット
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+<v-clicks depth="2">
 
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
+- 日本語で PR を出せるのでハードルが低い
+  - OSS に慣れることができ、ライブラリーにも気軽に PR 送れるようになる
+- もし間違えていても大変なことにはならない
+  - ライブラリーのバグとは違い、どこかのサービスに不具合が出たりしない
+  - レビューがあるし、すり抜けたとしても誰かが気づいて直してくれる
+- たくさんの人に見てもらえる満足感
+- 技術知識・英語力が向上する
 
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
+</v-clicks>
 
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
+---
+layout: section
+---
 
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
+# ドキュメント更新手順の実例
+Vue.js, Vite の場合
 
-```plantuml {scale: 0.7}
-@startuml
+---
+layout: two-cols-header
+---
 
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
+# ドキュメント更新手順の実例
 
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
+::left::
+issues 一覧ページに行く
 
-cloud {
-  [Example 1]
-}
+英語版の更新に合わせて  
+issue が自動作成されている
 
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
+::right::
+<img src="/screenshot-01.png" class="right-image" />
 
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
+---
+layout: two-cols-header
+---
 
-@enduml
-```
+# ドキュメント更新手順の実例
 
+::left::
+issue 詳細ページに行く
+
+リンクをクリック
+
+::right::
+<img src="/screenshot-02.png" class="right-image" />
+
+---
+layout: two-cols-header
+---
+
+# ドキュメント更新手順の実例
+
+::left::
+英語版の差分が表示される
+
+差分をコピー
+
+::right::
+<img src="/screenshot-03.png" class="right-image" />
+
+---
+layout: two-cols-header
+---
+
+# ドキュメント更新手順の実例
+
+::left::
+VS Code を開き、  
+該当箇所に貼り付け
+
+::right::
+<img src="/screenshot-04.png" class="right-image" />
+
+---
+layout: two-cols-header
+---
+
+# ドキュメント更新手順の実例
+
+::left::
+Google 翻訳と  
+DeepL に貼り付け
+
+訳文で全容を把握
+
+::right::
+<div class="right-image-light h-64 overflow-clip" >
+  <img src="/screenshot-06.png" />
+</div>
+<div class="right-image-light h-48 overflow-clip absolute top-50 right-20" >
+  <img src="/screenshot-05.png" />
 </div>
 
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
 
 ---
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
+layout: two-cols-header
 ---
 
-# Draggable Elements
+# ドキュメント更新手順の実例
 
-Double-click on the draggable elements to edit their positions.
+::left::
+原文の上の行に貼り付け
 
-<br>
+内容に相違ないか確認
+<small class="block">（特に技術用語など）</small>
 
-###### Directive Usage
+textlint エラー修正
 
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
+原文を消す
 
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <carbon:arrow-up />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
+::right::
+<img src="/screenshot-07.png" class="right-image" />
 
 ---
-src: ./pages/imported-slides.md
-hide: false
+layout: two-cols-header
 ---
 
----
+# ドキュメント更新手順の実例
 
-# Monaco Editor
+::left::
+PR 作成
 
-Slidev provides built-in Monaco Editor support.
+CI 完了後、  
+プレビューのリンクをクリック
 
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
+::right::
+<img src="/screenshot-08.png" class="right-image" />
+<div class="absolute top-66 right-43 w-75 h-12 border-6 border-violet-500 border-dashed" />
 
 ---
-layout: center
-class: text-center
+layout: two-cols-header
 ---
 
-# Learn More
+# ドキュメント更新手順の実例
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+::left::
+プレビューの表示を確認
 
-<PoweredBySlidev mt-10 />
+::right::
+<img src="/screenshot-09.png" class="right-image-light" />
+
+---
+layout: two-cols-header
+---
+
+# ドキュメント更新手順の実例
+
+::left::
+レビューして問題なければ  
+マージして完了
+
+::right::
+<img src="/screenshot-10.png" class="right-image" />
+
+---
+layout: two-cols-header
+---
+
+# ドキュメント更新手順の実例（番外編）
+
+::left::
+翻訳不要な場合も多い  
+（手軽に草を生やすチャンス）
+
+::right::
+<img src="/screenshot-11.png" class="right-image" />
+
+---
+layout: section
+---
+
+# まとめ
+
+---
+
+# まとめ
+
+<v-clicks>
+
+- ドキュメント翻訳は難しくない！
+  - 高度な英語力や技術力は必要ない
+- OSS 貢献してみたい場合は、まずドキュメントがおすすめ！
+  - 日本語でやり取りできるので、コントリビュートに慣れるのに最適
+
+</v-clicks>

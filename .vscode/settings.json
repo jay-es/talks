@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.css": "tailwindcss" // @apply の警告対応
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+  },
+  "cSpell.words": [
+    "slidev"
+  ],
+}
