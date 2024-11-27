@@ -22,51 +22,6 @@
     font-size: 90%;
     list-style-type: circle;
   }
-
-  /* layouts */
-
-  &.default {
-    @apply bg-cover bg-[url("/bg-default.svg")];
-
-    h1 {
-      @apply text-3xl text-white bg-primary -mx-14 px-14 -mt-10 py-6 mb-6;
-    }
-  }
-
-  &.cover {
-    @apply text-white bg-primary bg-cover bg-[url("/bg-cover.svg")];
-
-    h1 {
-      font-size: 2.68rem;
-      line-height: 1.4;
-    }
-
-    p {
-      opacity: 0.75;
-    }
-  }
-
-  &.quote {
-    @apply bg-cover bg-[url("/bg-quote.svg")];
-
-    h1 {
-      font-size: 4rem;
-      color: hsl(262 83% 33%);
-    }
-  }
-
-  &.section {
-    @apply text-white bg-primary bg-cover bg-[url("/bg-section.svg")];
-
-    h1 {
-      font-size: 3rem;
-      line-height: 1.4;
-    }
-
-    p {
-      opacity: 0.75;
-    }
-  }
 }
 
 .misunderstanding {

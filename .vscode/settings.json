@@ -1,9 +1,7 @@
 {
+  "css.lint.unknownAtRules": "ignore", // @apply の警告対応。files.associations だと SFC に効かない
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "files.associations": {
-    "*.css": "tailwindcss" // @apply の警告対応
-  },
   "[markdown]": {
     "editor.formatOnSave": false,
   },
