@@ -79,8 +79,7 @@ layout: quote
 
 <style>
 li:nth-child(1), li:nth-child(4), li:nth-child(6) {
-  color: var(--slidev-theme-strong);
-  font-weight: bold;
+  @apply text-accent font-bold;
 }
 </style>
 

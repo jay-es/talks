@@ -1,3 +1,7 @@
+:root {
+  --slidev-theme-accent: hsl(262 100% 50%);
+}
+
 .right-image {
   @apply w-128;
 }

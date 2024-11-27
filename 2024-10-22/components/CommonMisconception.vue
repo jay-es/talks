@@ -14,7 +14,6 @@ defineProps<{
 
 <style scoped>
 strong {
-  @apply block mb-4 font-normal text-5xl;
-  color: var(--slidev-theme-strong);
+  @apply block mb-4 font-normal text-5xl text-accent;
 }
 </style>
