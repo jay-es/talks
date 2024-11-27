@@ -96,10 +96,11 @@ layout: section
 
 英語がペラペラじゃないといけないのでは...😥
 
-<div v-click class="misunderstanding">
-  <strong>私も英語は話せません...😵</strong>
-  中学〜高校程度の英文法が分かれば大丈夫！
-</div>
+<CommonMisconception
+  v-click
+  lead="私も英語は話せません...😵"
+  text="中学〜高校程度の英文法が分かれば大丈夫！"
+/>
 
 ---
 
@@ -108,11 +109,11 @@ layout: section
 
 技術に精通していないといけないのでは...😰
 
-
-<div v-click class="misunderstanding">
-  <strong>正直､全部は理解できてない！😵‍💫</strong>
-  推測で翻訳している箇所もある...
-</div>
+<CommonMisconception
+  v-click
+  lead="正直､全部は理解できてない！😵‍💫"
+  text="推測で翻訳している箇所もある..."
+/>
 
 ---
 layout: section
