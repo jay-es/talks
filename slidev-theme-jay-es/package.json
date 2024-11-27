@@ -1,0 +1,11 @@
+{
+  "name": "slidev-theme-jay-es",
+  "slidev": {
+    "defaults": {
+      "fonts": {
+        "mono": "Roboto Mono",
+        "serif": "BIZ UDPMincho"
+      }
+    }
+  }
+}

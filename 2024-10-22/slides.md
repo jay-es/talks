@@ -1,6 +1,6 @@
 ---
 # You can also start simply with 'default'
-theme: none
+theme: jay-es
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://cover.sli.dev
@@ -22,9 +22,6 @@ transition: view-transition
 # mdc: true
 # take snapshot for each slide in the overview
 # overviewSnapshots: true
-fonts:
-  serif: BIZ UDPMincho
-  mono: Roboto Mono
 ---
 
 # 意外に簡単！<br/>ドキュメント翻訳で始める OSS コントリビュート

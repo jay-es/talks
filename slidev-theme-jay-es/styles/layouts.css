@@ -1,5 +1,3 @@
-@import "@slidev/client/styles/layouts-base.css";
-
 :root {
   --slidev-theme-primary: hsl(262 83% 19%);
   --slidev-theme-strong: hsl(262 100% 50%);
@@ -22,21 +20,4 @@
     font-size: 90%;
     list-style-type: circle;
   }
-}
-
-.misunderstanding {
-  @apply text-center mt-20;
-
-  strong {
-    @apply block mb-4 font-normal text-5xl;
-    color: var(--slidev-theme-strong);
-  }
-}
-
-.right-image {
-  @apply w-128;
-}
-
-.right-image-light {
-  @apply w-128 border border-dark;
 }
